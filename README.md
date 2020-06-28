@@ -22,7 +22,7 @@ OpenQBMM is a suite of solvers for the simulation of polydisperse
 multiphase flows. For additional details, please visit our website at
 [www.openqbmm.org](http://www.openqbmm.org).
 
-# OpenQBMM-test respository
+## OpenQBMM-test respository
 
 The OpenQBMM-test repository contains tests used during the development to
 verify the functionality of OpenQBMM.
