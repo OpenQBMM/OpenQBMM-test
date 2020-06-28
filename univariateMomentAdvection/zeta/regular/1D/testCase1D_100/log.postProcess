@@ -1,0 +1,57 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1912                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _dd4b8cf3-20200514 OPENFOAM=1912 patch=200506
+Arch   : "LSB;label=32;scalar=64"
+Exec   : postProcess -func sampleDict
+Date   : Jun 26 2020
+Time   : 15:24:46
+Host   : GeekoLaptop
+PID    : 6781
+I/O    : uncollated
+Case   : /home/alberto/OpenQBMM/test/univariateMomentAdvection/zeta/regular/1D/testCase1D_100
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+--> FOAM FATAL IO ERROR: 
+Unknown sample type lineCell
+
+Valid sample types :
+
+14
+(
+array
+cellCentre
+circle
+cloud
+face
+midPoint
+midPointAndFace
+patchCloud
+patchEdge
+patchSeed
+polyLine
+shortestPath
+triSurfaceMeshPointSet
+uniform
+)
+
+
+
+file: functions.sampleDict.sets from line 47 to line 51.
+
+    From function static Foam::autoPtr<Foam::sampledSet> Foam::sampledSet::New(const Foam::word&, const Foam::polyMesh&, const Foam::meshSearch&, const Foam::dictionary&)
+    in file sampledSet/sampledSet/sampledSet.C at line 541.
+

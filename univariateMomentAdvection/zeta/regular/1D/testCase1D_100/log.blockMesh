@@ -1,0 +1,81 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1912                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _dd4b8cf3-20200514 OPENFOAM=1912 patch=200506
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh
+Date   : Jun 26 2020
+Time   : 15:24:41
+Host   : GeekoLaptop
+PID    : 6778
+I/O    : uncollated
+Case   : /home/alberto/OpenQBMM/test/univariateMomentAdvection/zeta/regular/1D/testCase1D_100
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from "system/blockMeshDict"
+--> FOAM IOWarning :
+    Found [v1012] 'convertToMeters' entry instead of 'scale' in dictionary "/home/alberto/OpenQBMM/test/univariateMomentAdvection/zeta/regular/1D/testCase1D_100/system/blockMeshDict" 
+
+    This keyword is deemed to be 108 months old.
+
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list...
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.01000000000000000020816681711721685132943093776702880859375 .. 0.01000000000000011990408665951690636575222015380859375
+        j : 0.01000000000000000020816681711721685132943093776702880859375 .. 0.01000000000000000020816681711721685132943093776702880859375
+        k : 0.0200000000000000004163336342344337026588618755340576171875 .. 0.0200000000000000004163336342344337026588618755340576171875
+
+
+There are no merge patch pairs
+
+Detected cyclic patches; ordering boundary faces
+
+Writing polyMesh with 0 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 -0.010000000000000001942890293094023945741355419158935546875) (1 0.010000000000000001942890293094023945741355419158935546875 0.010000000000000001942890293094023945741355419158935546875)
+  nPoints: 404
+  nCells: 100
+  nFaces: 501
+  nInternalFaces: 99
+----------------
+Patches
+----------------
+  patch 0 (start: 99 size: 1) name: left
+  patch 1 (start: 100 size: 1) name: right
+  patch 2 (start: 101 size: 400) name: frontAndBack
+
+End
+
